@@ -1,0 +1,634 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Registro Nuevo</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Registro Nuevo </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h3 class="card-title">Registro Información -Permisos Otorgados- Trámites Ambientales</h3>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="bs-stepper">
+                                <div class="bs-stepper-header" role="tablist">
+                                    <!-- your steps here -->
+                                    <div class="step" data-target="#logins-part">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                <span class="bs-stepper-circle">1</span>
+                <span class="bs-stepper-label">Paso 1- Datos Básicos</span>
+              </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#information-part">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                <span class="bs-stepper-circle">2</span>
+                <span class="bs-stepper-label">Adjuntar Evidencias</span>
+              </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#information-part2">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="information-part2" id="information-part2-trigger">
+                <span class="bs-stepper-circle">3</span>
+                <span class="bs-stepper-label">Resumen Datos</span>
+              </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#information-part3">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="information-part3" id="information-part3-trigger">
+                <span class="bs-stepper-circle">4</span>
+                <span class="bs-stepper-label">Confirmación Envío</span>
+              </button>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="bs-stepper-content">
+                                    <!-- your steps content here -->
+                                    <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                                        <div class="col-md-6">
+
+                                        </div>
+                                        <div class="card card-default">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Datos Expediente del permiso otorgado</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-header -->
+
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+
+                                                        <div class="form-group">
+                                                            <!-- /valida expediente por usuario  -->
+                                                            <label>Seleccionar Expediente</label>
+                                                            <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">AS1-2020-456- Concesión de Aguas</option>
+                          <option>AS1-2020-456- Concesión de aguas</option>
+                          <option>AS1-2020-200- Concesión de aguas</option>
+                          <option>AS1-2020-456- Concesión de aguas</option><!-- /concatena el # de espediente y su respectivo asunto -->
+                          
+                          
+                          
+                        </select>
+                                                        </div>
+                                                        <!-- /.form-group -->
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Asunto</label>
+                                                            <input type="text" disabled="disabled" class="form-control" id="exampleInputEmail1" placeholder="Concesión de aguas">
+                                                        </div>
+
+
+                                                        <!-- /.form-group -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Estado</label>
+                                                            <input type="email" disabled="disabled" class="form-control" id="exampleInputEmail1" placeholder="Activo">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Oficina Territorial</label>
+                                                            <input type="email" disabled="disabled" class="form-control" id="exampleInputEmail1" placeholder="Aburrá Norte">
+                                                        </div>
+                                                        <!-- /.form-group -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- /.row -->
+
+
+                                            </div>
+                                            <!-- /.card-body -->
+                                            <div class="card-footer">
+
+                                            </div>
+                                        </div>
+                                        <!-- /.card -->
+
+                                        <div class="card card-default">
+                                            <div class="card-header">
+                                                <!-- /CONSULTA LOS DATOS DE LA PERSONA NATURAL O JURIDICA ENCARGADO DEL EXPEDIENTE  -->
+                                                <h3 class="card-title">Datos Solicitante ( SE MUESTRA SIEMPRE Y CUANDO EL USUARIO SEA UNA PERSONA JURÍDICA; LOS COMPAÑEROS DE REGIONALIZACIÓN DICEN QUE MOSTRARSE PARA AMBOS, PERSONA NATURAL COMO JURÍDICA) </h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Tipo Documento</label>
+                                                            <select class="form-control select2bs4" style="width: 100%;" disabled="disabled">
+                          <option selected="selected">Cédula de Ciudadania</option>
+                          <option>Tarjeta de indentidad</option>
+                          <option>Pasaporte</option>
+                        
+                        </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputNombre">Nombre de la Persona</label>
+                                                            <input type="text" class="form-control" disabled="disabled" id="inputNombre" placeholder="Nombre Persona">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label>Departamento</label>
+                                                            <select class="form-control select2bs4" style="width: 100%;" disabled="disabled">
+                          <option selected="selected">Antioquia</option>
+                          <option>Amazonas</option>
+                          <option>Magdalena</option>
+                         
+                        </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputDireccion">Dirección Residencia</label>
+                                                            <input disabled="disabled" type="text" class="form-control" id="inputDireccion" placeholder="Ej: Calle 1 # 1 - 1">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="inputTelefono">Teléfono Fijo</label>
+                                                            <input disabled="disabled" type="number" class="form-control" id="inputTelefono" placeholder="Ej: 777 77 77">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- /.col -->
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="inputId">Identificación</label>
+                                                            <input disabled="disabled" type="text" class="form-control" id="inputId" placeholder="Número de documento">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="form-group">
+                                                                <label for="inputApellido">Apellido persona</label>
+                                                                <input disabled="disabled" type="text" class="form-control" id="inputApellido" placeholder="Apellido Persona">
+                                                            </div>
+
+                                                            <!-- /.form-group -->
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Municipio</label>
+                                                            <select disabled="disabled" class="form-control select2bs4" style="width: 100%;">
+                        <option selected="selected">Medellín</option>
+                        <option>Envigado</option>
+                        
+                      </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="inputEmail">Correo electrónico</label>
+                                                            <input disabled="disabled" type="email" class="form-control" id="inputEmail" placeholder="Ej: prueba@correo.com.co">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputCelular">Celular</label>
+                                                            <input disabled="disabled" type="number" class="form-control" id="inputCelular" placeholder="Ej: 777 777 77 77">
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+
+                                                </div>
+                                                <!-- /.card-body -->
+                                                <div class="card-footer">
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+
+                                        <!-- /FORM DATOS DE CONTACTO  -->
+
+                                        <!-- /.card -->
+
+
+                                        <div class="card card-default">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Persona responsable del registro de la información</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+
+                                                        <div class="form-group">
+                                                            <label for="inputNombresApellidos">Nombre y Apellidos Completo</label>
+                                                            <input type="text" class="form-control" id="inputNombresApellidos" placeholder="Nombre y Apellidos Persona">
+                                                        </div>
+
+
+
+
+                                                        <div class="form-group">
+                                                            <label for="inputTelcontacto">Teléfono Fijo</label>
+                                                            <input type="number" class="form-control" id="inputTelcontacto" placeholder="Ej: 777 77 77">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- /.col -->
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Correo electrónico</label>
+                                                            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Ej: prueba@correo.com.co">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Celular</label>
+                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ej: 777 777 77 77">
+                                                        </div>
+
+
+                                                        <!-- /.form-group -->
+                                                    </div>
+
+
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- /.row -->
+
+
+                                            </div>
+                                            <!-- /.card-body -->
+                                            <div class="card-footer">
+
+                                            </div>
+                                        </div>
+
+
+                                        <button class="btn btn-primary" onclick="stepper.next()">Siguiente</button>
+
+
+
+                                    </div>
+
+
+
+
+
+                                    <!-- /.col -->
+
+
+
+
+
+                                    <!-- /.col -->
+
+
+
+
+
+                                    <!-- /.row -->
+                                    <!-- /.adjuntar evidencia y registrar obligacion -->
+                                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card card-default">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">Adjuntar Evidencias y/o dar respuesta a una obligación <small><em></em> </small></h3>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="card card-primary">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title">Seleccionar y adjuntar Evidencia</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div id="actions" class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="btn-group w-100">
+                                                                            <span class="btn btn-success col fileinput-button">
+                                      <i class="fas fa-plus"></i>
+                                      <span>Adjuntar</span>
+                                                                            </span>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 d-flex align-items-center">
+                                                                        <div class="fileupload-process w-100">
+                                                                            <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table table-striped files" id="previews">
+                                                                    <div id="template" class="row mt-2">
+                                                                        <div class="col-auto">
+                                                                            <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
+                                                                        </div>
+
+                                                                        <div class="col d-flex align-items-center">
+                                                                            <p class="mb-0">
+                                                                                <span class="lead" data-dz-name></span> (
+                                                                                <span data-dz-size></span>)
+                                                                            </p>
+                                                                            <strong class="error text-danger" data-dz-errormessage></strong>
+                                                                        </div>
+
+                                                                        <div class="col-4 d-flex align-items-center">
+                                                                            <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto d-flex align-items-center">
+                                                                            <div class="btn-group">
+
+
+                                                                                <button data-dz-remove class="btn btn-danger delete">
+                                        <i class="fas fa-trash"></i>
+                                        <span>Delete</span>
+                                      </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- /.card-body -->
+                                                        <div class="card-footer">
+                                                            Tipo de archivos permitidos: .pdf, .png y jpg | 2 MB por archivo
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card card-primary">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title">Dar Respuesta | Obligación </h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="form-group">
+                                                                    <label>Obligación</label>
+                                                                    <select class="form-control select2bs4" style="width: 100%;">
+                                  <option selected="selected">Antioquia</option>
+                                  <option>Tarjeta de indentidad</option>
+                                  <option>Pasaporte</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                                                                </div>
+
+                                                                <div class="col-auto">
+                                                                    <label for="ObservacionesInput">Observaciones </label> <input type="email" class="form-control" id="ObservacionesInput" placeholder="Observaciones al archivo">
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+                                                <!-- /.card -->
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.row -->
+                                        <button class="btn btn-primary" onclick="stepper.next()">Siguiente</button>
+                                        <button class="btn btn-primary" onclick="stepper.previous()">Atrás</button>
+
+                                    </div>
+
+                                    <!-- /.resumen de datos -->
+                                    <div id="information-part2" class="content" role="tabpanel" aria-labelledby="information-part2-trigger">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="callout callout-info">
+                                                    <h5><i class="fas fa-info"></i> Nota:</h5>
+                                                    Por favor verificar la información y documentos adjuntos y/o respuesta a obligación antes de realizar el envío.
+                                                </div>
+
+
+                                                <!-- Main content -->
+                                                <div class="invoice p-3 mb-3">
+                                                    <!-- title row -->
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h4>
+                                                                <i class="fas fa-globe"></i> Nombre trámite | N expediente.
+                                                                <!-- /.trae los datos seleccionados por el usuario temporalmente -->
+                                                                <small class="float-right">Date: 2/10/2014</small>
+                                                            </h4>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- info row -->
+                                                    <div class="row invoice-info">
+                                                        <div class="col-sm-4 invoice-col">
+                                                            Datos Representante Legal
+                                                            <address>
+                              <strong>Admin, Inc.</strong><br><!-- /.trae los datos de la persona natural o jurídica segun expediente -->
+                              795 Folsom Ave, Suite 600<br>
+                              San Francisco, CA 94107<br>
+                              Phone: (804) 123-5432<br>
+                              Email: info@almasaeedstudio.com
+                            </address>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-sm-4 invoice-col">
+                                                            Datos Responsable
+                                                            <address>
+                              <strong>John Doe</strong><br><!-- /.trae los datos ingresados por el usuario responsable -->
+                              Phone: (555) 539-1037<br>
+                              Email: john.doe@example.com
+                            </address>
+                                                        </div>
+                                                        <!-- /.col -->
+
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <!-- Table row -->
+                                                    <div class="row">
+                                                        <div class="col-12 table-responsive">
+                                                            <div class="card card-primary">
+                                                                <div class="card-header">
+                                                                    <h3 class="card-title">Resumen Obligación Registrada</h3>
+                                                                </div>
+                                                                <table class="table table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Obligación</th>
+                                                                            <th>Observación</th>
+
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Obligacion 1</td>
+                                                                            <td>Observacion - obligacion 1</td>
+
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Obligacion 1</td>
+                                                                            <td>Observacion - obligacion 1</td>
+
+
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="col-12 table-responsive">
+                                                                <div class="card card-primary">
+                                                                    <div class="card-header">
+                                                                        <h3 class="card-title">Resumen Evidencia Adjunta</h3>
+                                                                    </div>
+                                                                    <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Documento Adjunto</th>
+                                                                                <th>Peso</th>
+
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>evidencia 1.png</td>
+                                                                                <td>12kb</td>
+
+
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>evidencia 2.pdf</td>
+                                                                                <td>1mb</td>
+
+
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <div class="row">
+
+                                                        <!-- /.col -->
+
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <!-- this row will not appear when printing -->
+
+                                                </div>
+                                                <!-- /.invoice -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+                                        <!-- /.row -->
+                                        <button class="btn btn-primary" onclick="stepper.previous()">Atrás</button>
+                                        <button type="submit" class="btn btn-primary" onclick="stepper.next()">Enviar</button>
+                                    </div>
+
+                                    <!-- /.confirmación envío -->
+                                    <div id="information-part3" class="content" role="tabpanel" aria-labelledby="information-part3-trigger">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="callout callout-info">
+                                                    <h5>
+                                                        <i> </i>¡ Se ha enviado con éxito!</h5>
+                                                    Muchas Gracias por tu gestión. Se ha enviado con éxito los documentos adjuntos con radicado N XXXXXXX. Te recomendamos estar pendiente de tus datos de contacto para podermos comunicar contigo.
+                                                </div>
+
+
+                                                <!-- Main content -->
+
+                                                <!-- /.invoice -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+                                        <!-- /.row -->
+                                        <button class="btn btn-primary" onclick="stepper.previous()">Atrás ---> borrar ese button luego de estar backend listo, se dejó solo a modo de prueba para navegación</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                Visite <a href="#">Corantioquia.gov.co</a> para más información.
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </section>
+
+</div>
